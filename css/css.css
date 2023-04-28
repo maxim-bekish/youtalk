@@ -101,8 +101,21 @@ nav {
   color: rgba(51, 51, 51, 1);
   font-weight: 700;
 }
+/*  + 
+    + 
+    +
+    + 
+    + 
+    + 
+ -------------  wrapper----start  -------------  
+    + 
+    + 
+    + 
+    +
+    + 
+    + 
+    +  */
 
-/* -------------------wrapper----start------------ */
 .section-Up {
   display: flex;
   justify-content: space-between;
@@ -231,3 +244,18 @@ nav {
   margin: 56px auto 96px auto;
   justify-content: center;
 }
+/*  + 
+    + 
+    +
+    + 
+    + 
+    + 
+ -------------  footer  -------------  
+    + 
+    + 
+    + 
+    +
+    + 
+    + 
+    +  */
+
