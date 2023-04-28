@@ -1,0 +1,233 @@
+header {
+  border-bottom: 1px solid rgba(239, 245, 251, 1);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+}
+.header-section-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-section-row__right {
+  display: flex;
+}
+.header-section-row__right li {
+  margin-left: 30px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.header-section-row__right a {
+  text-decoration: none;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.14rem;
+}
+.header-section-row__right ul {
+  display: flex;
+}
+.logo_YouTalk {
+  margin-right: 20px;
+}
+
+.header-search-psychologist {
+  padding: 14px 20px;
+  margin: 14px 0;
+  font-weight: 700;
+  font-size: 1.14rem;
+  line-height: 1.42rem;
+  color: rgba(3, 178, 165, 1);
+  background: rgba(227, 245, 245, 1);
+  border: 0;
+  border-radius: 4px;
+}
+/*  + 
+    + 
+    +
+    + 
+    + 
+    + 
+ -------------  M A I N  -------------  
+    + 
+    + 
+    + 
+    +
+    + 
+    + 
+    +  */
+
+.nav-tag ul {
+  margin-bottom: 23px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav-tag li {
+  margin-right: 8px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  border: 1px solid #c1c5cd;
+  border-radius: 24px;
+  padding: 6px 8px;
+}
+.nav-tag a {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.17rem;
+  text-decoration: none;
+}
+.tab-history span {
+  font-size: 0.85rem;
+  line-height: 1.28rem;
+  color: rgba(51, 51, 51, 0.7);
+}
+.tab-history {
+  display: flex;
+  text-align: center;
+  margin-top: 16px;
+}
+.title h1 {
+  margin: 30px 0;
+  font-size: 3.42rem;
+  line-height: 4rem;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 700;
+}
+
+/* -------------------wrapper----start------------ */
+.section-Up {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  border: 1px solid rgba(222, 222, 222, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 16px;
+  max-width: 588px;
+  min-height: 499px;
+}
+
+.wrapper__img {
+  box-sizing: border-box;
+  padding: 8px;
+  min-height: 260px;
+}
+
+.wrapper__img_egg {
+  background: url(/img/egg.png) 0 0 /100% 100% no-repeat;
+}
+.wrapper__img_run {
+  background: url(/img/run.png) 0 0 /100% 100% no-repeat;
+}
+.check-tag-box {
+  display: table;
+  border-radius: 24px;
+  margin-bottom: 8px;
+  padding: 6px 8px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(193, 197, 205, 1);
+}
+.check-tag-box span {
+  font-weight: 600;
+  color: #333333;
+  font-size: 1rem;
+  line-height: 1.42rem;
+}
+.wrapper__text {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+.wrapper__text h4 {
+  font-size: 1.28rem;
+  line-height: 1.85rem;
+  font-weight: 700;
+  color: #333333;
+}
+.wrapper__text span {
+  display: block;
+  margin: 4px 0 8px 0;
+  color: #494949;
+  font-size: 0.85rem;
+  line-height: 1.28rem;
+}
+.wrapper__text p {
+  font-size: 1rem;
+  line-height: 1.42rem;
+  color: #333333;
+}
+.wrapper > span {
+  margin: 16px;
+  color: #868686;
+  font-size: 0.85rem;
+  line-height: 1.28rem;
+}
+.wrapper-mini {
+  margin-top: 23px;
+  border: 1px solid rgba(222, 222, 222, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 16px;
+  min-height: 475px;
+  max-width: 384px;
+}
+.wrapper-mini > span {
+  margin: 16px;
+  color: #868686;
+  font-size: 0.85rem;
+  line-height: 1.28rem;
+}
+.section-Down {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wrapper__img_girl_sleep {
+  background: url(/img/girl_sleep.png);
+}
+.wrapper__img_girl_sea {
+  background: url(/img/girl_sea.png);
+}
+.wrapper__img_evil_stick {
+  background: url(/img/evil_stick.png);
+}
+.wrapper__img_woman-laptop {
+  background: url(/img/woman-laptop.png);
+}
+.wrapper__img_woman-laptop-two {
+  background: url(/img/woman-laptop-2.png);
+}
+.wrapper__img_people {
+  background: url(/img/people.png);
+}
+.section-row_button button {
+  background: rgba(53, 179, 169, 1);
+  border-radius: 4px;
+  padding: 12px 16px;
+  border: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 1.14rem;
+  line-height: 1.71rem;
+  width: 182px;
+  height: 48px;
+}
+.section-row_button {
+  display: flex;
+  margin: 56px auto 96px auto;
+  justify-content: center;
+}
