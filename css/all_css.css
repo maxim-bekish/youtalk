@@ -16,7 +16,9 @@ button{
       cursor: pointer;
 
 }
-
+a:visited{
+      color: black;
+}
 /* .unicorn-svg{
 margin-bottom: -3px;
 }

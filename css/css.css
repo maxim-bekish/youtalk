@@ -9,6 +9,7 @@ nav {
   display: flex;
 }
 .header-section-row {
+  margin: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +38,6 @@ nav {
 
 .header-search-psychologist {
   padding: 14px 20px;
-  margin: 14px 0;
   font-weight: 700;
   font-size: 1.14rem;
   line-height: 1.42rem;
@@ -45,6 +45,9 @@ nav {
   background: rgba(227, 245, 245, 1);
   border: 0;
   border-radius: 4px;
+}
+.burger-menu{
+display: none;
 }
 /*  + 
     + 
@@ -78,6 +81,7 @@ nav {
   padding: 6px 8px;
 }
 .nav-tag a {
+  color: #333333;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.17rem;
@@ -395,6 +399,10 @@ footer {
   .container {
     padding: 0 20px;
   }
+  .burger-menu{
+display: block;
+margin: 0 11px 0 0;
+}
   .header-search-psychologist,
   footer,
   .section-row_button,
