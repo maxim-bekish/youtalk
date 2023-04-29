@@ -17,7 +17,7 @@ nav {
   display: flex;
 }
 .header-section-row__right li {
-  margin-left: 30px;
+  margin: 0 0 0 30px;
 
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@ nav {
   display: flex;
 }
 .logo_YouTalk {
-  margin-right: 20px;
+  margin: 0 20px 0 0;
 }
 
 .header-search-psychologist {
@@ -62,14 +62,14 @@ nav {
     +  */
 
 .nav-tag ul {
-  margin-bottom: 23px;
+  margin: 0 0 23px 0;
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 .nav-tag li {
-  margin-right: 8px;
+  margin: 0 8px 0 0;
 
   display: flex;
   align-items: center;
@@ -90,7 +90,7 @@ nav {
 .tab-history {
   display: flex;
   text-align: center;
-  margin-top: 16px;
+  margin: 16px 0 0 0;
 }
 .title h1 {
   margin: 30px 0;
@@ -136,15 +136,15 @@ nav {
 }
 
 .wrapper__img_egg {
-  background: url(/img/egg.png) 0 0 /100% 100% no-repeat;
+  background: url(../img/egg.png) 0 0 /100% 100% no-repeat;
 }
 .wrapper__img_run {
-  background: url(/img/run.png) 0 0 /100% 100% no-repeat;
+  background: url(../img/run.png) 0 0 /100% 100% no-repeat;
 }
 .check-tag-box {
   display: table;
   border-radius: 24px;
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
   padding: 6px 8px;
   background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(193, 197, 205, 1);
@@ -154,6 +154,13 @@ nav {
   color: #333333;
   font-size: 1rem;
   line-height: 1.42rem;
+}
+
+#activ-tag {
+  border: 2px solid rgba(22, 200, 187, 1);
+}
+.unicorn-svg {
+  margin: 0 0 -3px 0;
 }
 .wrapper__text {
   display: flex;
@@ -185,7 +192,7 @@ nav {
   line-height: 1.28rem;
 }
 .wrapper-mini {
-  margin-top: 23px;
+  margin: 23px 0 0 0;
   border: 1px solid rgba(222, 222, 222, 1);
   display: flex;
   flex-direction: column;
@@ -208,22 +215,22 @@ nav {
 }
 
 .wrapper__img_girl_sleep {
-  background: url(/img/girl_sleep.png);
+  background: url(../img/girl_sleep.png);
 }
 .wrapper__img_girl_sea {
-  background: url(/img/girl_sea.png);
+  background: url(../img/girl_sea.png);
 }
 .wrapper__img_evil_stick {
-  background: url(/img/evil_stick.png);
+  background: url(../img/evil_stick.png);
 }
 .wrapper__img_woman-laptop {
-  background: url(/img/woman-laptop.png);
+  background: url(../img/woman-laptop.png);
 }
 .wrapper__img_woman-laptop-two {
-  background: url(/img/woman-laptop-2.png);
+  background: url(../img/woman-laptop-2.png);
 }
 .wrapper__img_people {
-  background: url(/img/people.png);
+  background: url(../img/people.png);
 }
 .section-row_button button {
   background: rgba(53, 179, 169, 1);
@@ -242,6 +249,7 @@ nav {
   margin: 56px auto 96px auto;
   justify-content: center;
 }
+
 /*  + 
     + 
     +
@@ -262,7 +270,7 @@ footer {
   padding: 40px 0 17px 0;
 }
 .footer-row-up {
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -284,14 +292,14 @@ footer {
   max-width: 486px;
 }
 .footer_search_input {
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
   display: flex;
   align-items: center;
   max-width: 384px;
 }
 .footer_search_wrapper h4 {
   max-width: 356px;
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
   font-weight: 700;
   font-size: 1.28rem;
   line-height: 1.85rem;
@@ -299,7 +307,7 @@ footer {
 }
 .footer_search_input input {
   font-size: 1rem;
-  padding-left: 16px;
+  padding: 0 0 0 16px;
   line-height: 1.42rem;
   width: 384px;
   height: 48px;
@@ -333,28 +341,27 @@ footer {
   line-height: 1.28rem;
 }
 .mini_logo_social_network {
-  padding-top: 40px;
+  padding: 40px 0 0 0;
   display: flex;
 }
 .mini_logo_social_network div {
-  margin-right: 16px;
+  margin: 0 16px 0 0;
 }
 
 .all_logo_social_network {
-  margin-right: 61px;
+  margin: 0 61px 0 0;
   display: flex;
   flex-direction: column;
- 
 }
 .footer-row-down {
   border-top: 1px solid rgba(157, 157, 157, 0.3);
-  padding-top: 16px;
+  padding: 16px 0 0 0;
 }
 .footer-row-down ul {
   display: flex;
 }
 .footer-row-down li {
-  padding-right: 48px;
+  padding: 0 48px 0 0;
 }
 
 .footer-row-down a {
@@ -362,4 +369,81 @@ footer {
   line-height: 1.42rem;
   opacity: 0.7;
   color: #fff;
+}
+
+/* -------------------------- 1 0 2 4 iPad Pro 12.9"-1 ------------------- */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 24px;
+  }
+  .header-search-psychologist,
+  footer {
+    display: none;
+  }
+  .wrapper {
+    max-width: 468px;
+    min-height: 240px;
+  }
+  .wrapper-mini {
+    max-width: 304px;
+    min-height: 458px;
+  }
+}
+
+/* -------------------------- 7 6 8  iPad mini-2 ------------------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header-search-psychologist,
+  footer,
+  .section-row_button,
+  .header-section-row__right > nav {
+    display: none;
+  }
+  .wrapper {
+    max-width: 728px;
+    min-height: 599px;
+    margin: 0 0 24px 0;
+  }
+  .wrapper-mini {
+    max-width: 352px;
+    min-height: 446px;
+  }
+  .section-Up {
+    flex-direction: column;
+  }
+  .wrapper__img_egg,
+  .wrapper__img_run {
+    min-height: 404px;
+  }
+}
+
+/* -------------------------- 4 1 4  iPhone 11 Pro Max-2  ------------------- */
+
+@media (max-width: 414px) {
+  .wrapper,
+  .wrapper-mini {
+    max-width: 374px;
+    min-height: 462px;
+    margin: 0 0 16px 0;
+  }
+
+  .wrapper__img_egg,
+  .wrapper__img_run {
+    min-height: 206px;
+  }
+}
+
+/* -------------------------- 3 2 0  iPhone SE-1  ------------------- */
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 16px;
+  }
+  .wrapper,
+  .wrapper-mini {
+    max-width: 288px;
+    min-height: 206px;
+  }
 }
