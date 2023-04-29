@@ -46,8 +46,8 @@ nav {
   border: 0;
   border-radius: 4px;
 }
-.burger-menu{
-display: none;
+.burger-menu {
+  display: none;
 }
 /*  + 
     + 
@@ -72,7 +72,7 @@ display: none;
   align-items: center;
 }
 .nav-tag li {
-  margin: 0 8px 0 0;
+  margin: 0 8px 8px 0;
 
   display: flex;
   align-items: center;
@@ -81,6 +81,7 @@ display: none;
   padding: 6px 8px;
 }
 .nav-tag a {
+  white-space: nowrap;
   color: #333333;
   font-weight: 600;
   font-size: 1rem;
@@ -399,10 +400,10 @@ footer {
   .container {
     padding: 0 20px;
   }
-  .burger-menu{
-display: block;
-margin: 0 11px 0 0;
-}
+  .burger-menu {
+    display: block;
+    margin: 0 11px 0 0;
+  }
   .header-search-psychologist,
   footer,
   .section-row_button,
@@ -441,6 +442,18 @@ margin: 0 11px 0 0;
   .wrapper__img_run {
     min-height: 206px;
   }
+
+  .nav-tag ul {
+    overflow: auto;
+    margin: 0 -20px;
+    flex-wrap: nowrap;
+  }
+  .nav-tag ul::-webkit-scrollbar {
+    width: 0;
+  }
+  .nav-tag li {
+    margin: 0 8px 0 0;
+  }
 }
 
 /* -------------------------- 3 2 0  iPhone SE-1  ------------------- */
@@ -454,4 +467,7 @@ margin: 0 11px 0 0;
     max-width: 288px;
     min-height: 206px;
   }
+   .nav-tag ul{
+      margin: 0 -16px;
+   }
 }
