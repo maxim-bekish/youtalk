@@ -753,3 +753,90 @@ p {
 
   border-radius: 50%;
 }
+
+.card-two h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.41rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.card-two span:nth-child(2) {
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  font-size: 1.14rem;
+  line-height: 1.71rem;
+  margin: 0 0 4px 0;
+}
+.card-two span:nth-child(3) {
+  display: block;
+  font-weight: 500;
+  color: #a2a7b1;
+  line-height: 1.42rem;
+  font-size: 1rem;
+  margin: 0 0 16px 0;
+}
+.card-two li {
+  margin: 8px 0 0 20px;
+  list-style-type: disc;
+  font-size: 1rem;
+  line-height: 1.42rem;
+}
+.card-two li::marker {
+  color: #03b2a5;
+  font-size: 1.5rem;
+}
+.card-button {
+  margin: 20px 0 0 0;
+}
+.card-two_end {
+  border-top: 1px solid #dedede;
+  padding: 16px 0 0 0;
+}
+
+/* ----------------------card three------------------------------ */
+.card-three {
+  overflow: hidden;
+  width: 282px;
+  height: 292px;
+  position: relative;
+  background: #2963a3;
+  border-radius: 16px;
+}
+.card-three > .present_1 {
+  margin: 0;
+  position: absolute;
+  top: 180px;
+  z-index: 2;
+  left: 0px;
+}
+.card-three > .present_2 {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  top: 153px;
+  left: 105px;
+}
+.card-three > .present_3 {
+  position: absolute;
+  margin: 0;
+  z-index: 2;
+  top: 217px;
+  left: 175px;
+}
+.card-three > .happy {
+  position: absolute;
+  margin: 0;
+  top: 0px;
+  left: 0px;
+}
+.card-three h2{
+  text-align: center;
+font-weight: 700;
+font-size: 2.28rem;
+line-height: 2.85rem;
+color: #fff;
+margin: 60px 0 0 0 ;
+}
