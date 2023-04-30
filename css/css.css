@@ -273,7 +273,7 @@ nav {
     + 
     +  */
 
-footer {
+.footer {
   background: rgba(41, 99, 163, 1);
   padding: 40px 0 17px 0;
 }
@@ -693,6 +693,7 @@ p {
   padding: 24px;
   background: #e6f0fd;
   border-radius: 16px;
+  margin: 88px 0 0 0;
 }
 .card-one h5 {
   text-align: center;
@@ -725,6 +726,7 @@ p {
 
 /* ---------------card-2---------------- */
 .card-two {
+  margin: 24px 0 0 0;
   position: relative;
   padding: 16px 16px 36px 16px;
   border-radius: 16px;
@@ -798,6 +800,7 @@ p {
 
 /* ----------------------card three------------------------------ */
 .card-three {
+  margin: 28px 0 0 0;
   overflow: hidden;
   width: 282px;
   height: 292px;
@@ -832,11 +835,88 @@ p {
   top: 0px;
   left: 0px;
 }
-.card-three h2{
+.card-three h2 {
   text-align: center;
-font-weight: 700;
-font-size: 2.28rem;
-line-height: 2.85rem;
-color: #fff;
-margin: 60px 0 0 0 ;
+  font-weight: 700;
+  font-size: 2.28rem;
+  line-height: 2.85rem;
+  color: #fff;
+  margin: 60px 0 0 0;
+}
+
+/* ----------------------card four------------------------------ */
+
+.card-four {
+  margin: 39px 0 0 0;
+  padding: 32px 54px 32px 32px;
+  overflow: hidden;
+  background: #ffffff;
+  position: relative;
+  border: 1px solid #dedede;
+  border-radius: 24px;
+}
+
+.card-four h4 {
+  font-weight: 700;
+  color: #2963a3;
+  font-size: 1.28rem;
+  line-height: 1.85rem;
+}
+.card-four p {
+  color: #011632;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  line-height: 1.42rem;
+}
+.card-four h3 {
+  font-weight: 700;
+  font-size: 1.71rem;
+  line-height: 2.28rem;
+}
+.present_4 {
+  position: absolute;
+  top: 212px;
+  left: 169px;
+}
+.present_5 {
+  z-index: 1;
+  position: absolute;
+  top: 226px;
+  left: 198px;
+}
+
+.card-four-button {
+  max-width: 108px;
+}
+
+.section-end {
+  /* position: absolute; */
+
+  padding: 80px 0 76px 0;
+  border-top: 1px solid #dedede;
+}
+.svg-end {
+  position: relative;
+  top: 0px;
+  left: 50%;
+  margin: 0 0 0 -740px;
+}
+.section-end h1 {
+  font-weight: 700;
+  font-size: 3.42rem;
+  line-height: 4rem;
+}
+.section-end div{
+    max-width: 348px;
+}
+.section-end p {
+  font-size: 1.28rem;
+  line-height: 1.85rem;
+}
+.svg_end{
+position: relative;
+
+}
+.people_two{
+position: relative;
 }
