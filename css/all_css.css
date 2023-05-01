@@ -1,4 +1,4 @@
-body{
+body {
   position: relative;
 }
 html {
@@ -20,15 +20,35 @@ button {
 a:visited {
   color: #333333;
 }
-img{
+img {
   max-width: 100%;
-  /* margin: 0px 24px 0px 0 */
 }
- p{
-margin: 24px 0 24px 0;
+p {
+  margin: 24px 0 24px 0;
 }
 h3 {
   font-weight: 700;
   font-size: 1.71rem;
   line-height: 2.28rem;
+}
+nav a {
+  white-space: nowrap;
+}
+.tab-history a {
+  resize: none;
+  white-space: nowrap;
+}
+.tab-history a:nth-child(3) {
+  resize: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.wrapper-mini {
+  box-sizing: border-box;
+  border: 1px solid rgba(222, 222, 222, 1);
+  overflow: hidden;
+  border-radius: 16px;
 }
