@@ -121,8 +121,13 @@ nav {
     + 
     + 
     +  */
-
+.section-row_content {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
 .section-Up {
+  gap: 24px;
   display: flex;
   justify-content: space-between;
 }
@@ -200,7 +205,8 @@ nav {
   line-height: 1.28rem;
 }
 .wrapper-mini {
-  margin: 23px 0 0 0;
+  /* margin: 23px 0 0 0; */
+  box-sizing: border-box;
   border: 1px solid rgba(222, 222, 222, 1);
   display: flex;
   flex-direction: column;
@@ -208,7 +214,7 @@ nav {
   overflow: hidden;
   border-radius: 16px;
   min-height: 475px;
-  max-width: 384px;
+  max-width: 382px;
 }
 .wrapper-mini > span {
   margin: 16px;
@@ -217,6 +223,7 @@ nav {
   line-height: 1.28rem;
 }
 .section-Down {
+  row-gap: 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -419,13 +426,14 @@ nav {
   .wrapper {
     max-width: 728px;
     min-height: 599px;
-    margin: 0 0 24px 0;
+    /* margin: 0 0 24px 0; */
   }
   .wrapper-mini {
     max-width: 352px;
     min-height: 446px;
   }
   .section-Up {
+    row-gap: 16px;
     flex-direction: column;
   }
   .wrapper__img_egg,
@@ -441,14 +449,22 @@ nav {
   .wrapper-mini {
     max-width: 374px;
     min-height: 462px;
-    margin: 0 0 16px 0;
+    row-gap: 16px;
+  }
+  .section-Down,
+  .section-Up,
+  .section-row_content {
+    row-gap: 16px;
   }
 
   .wrapper__img_egg,
   .wrapper__img_run {
     min-height: 206px;
   }
-
+  .title h1 {
+    font-size: 2.28rem;
+    line-height: 2.85rem;
+  }
   .nav-tag ul {
     overflow: auto;
     margin: 0 -20px;
@@ -467,6 +483,11 @@ nav {
 @media (max-width: 320px) {
   .container {
     padding: 0 16px;
+  }
+
+  .title h1 {
+    font-size: 1.71rem;
+    line-height: 2.28rem;
   }
   .wrapper,
   .wrapper-mini {
@@ -509,11 +530,11 @@ nav {
               + */
 
 .wrapper-content {
+  gap: 24px;
   display: flex;
   justify-content: space-between;
 }
 .wrapper-content-left {
-  margin: 0 24px 40px 0;
   max-width: 690px;
   color: #333333;
 }
@@ -620,8 +641,11 @@ p {
 
 .img_woman_and_arm {
   display: flex;
+  gap: 24px;
 }
-
+.img_woman_and_arm p {
+  margin: 0;
+}
 .exercise {
   padding: 24px;
   border-radius: 16px;
@@ -638,13 +662,12 @@ p {
 }
 .section-chair-and-night_woman {
   display: flex;
+  gap: 24px;
   justify-content: space-between;
 }
 .section-chair-and-night_woman img {
   margin: 0;
-}
-.section-chair-and-night_woman div {
-  max-width: 333px;
+  width: 100%;
 }
 
 .svg_zig-zag {
@@ -656,6 +679,7 @@ p {
 .check-tag-end ul {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .check-tag-end li {
   margin: 0;
@@ -690,6 +714,10 @@ p {
 + */
 
 .wrapper-content-right {
+  display: flex;
+
+  gap: 20px;
+  flex-direction: column;
   max-width: 288px;
   margin: 88px 0 0 0;
 }
@@ -697,7 +725,7 @@ p {
   padding: 24px;
   background: #e6f0fd;
   border-radius: 16px;
-  margin: 0 0 24px 0;
+  /* margin: 0 0 24px 0; */
 }
 .card-one h5 {
   text-align: center;
@@ -730,7 +758,7 @@ p {
 
 /* ---------------card-2---------------- */
 .card-two {
-  margin: 0px 0 24px 0;
+  /* margin: 0px 0 24px 0; */
   position: relative;
   padding: 16px 16px 36px 16px;
   border-radius: 16px;
@@ -806,7 +834,7 @@ p {
 .card-three {
   display: flex;
   justify-content: center;
-  margin: 28px 0 0 0;
+  /* margin: 28px 0 0 0; */
   overflow: hidden;
   max-width: 288px;
   height: 292px;
@@ -853,7 +881,7 @@ p {
 /* ----------------------card four------------------------------ */
 
 .card-four {
-  margin: 39px 0 0 0;
+  /* margin: 39px 0 0 0; */
   overflow: hidden;
   background: #ffffff;
   position: relative;
@@ -927,6 +955,7 @@ p {
   .container {
     padding: 0 32px;
   }
+
   .content-article li {
     margin: 0 0px 0px 24px;
     list-style-type: disc;
@@ -936,9 +965,11 @@ p {
     color: #03b2a5;
   }
 
-  .wrapper-content-left,
+  .wrapper-content-left {
+    max-width: 714px;
+  }
   .wrapper-content-right {
-    max-width: 100%;
+    max-width: 222px;
   }
   .section-end,
   .svg-end,
@@ -965,28 +996,28 @@ p {
     padding: 0 20px;
   }
 
-  .wrapper-content-left {
-    margin: 0 0 40px 0;
-  }
   .wrapper-content {
     flex-direction: column;
   }
   .wrapper-content-right {
-    display: flex;
+    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 0 144px 0;
+    max-width: 100%;
+    margin: 0;
   }
+
   .card-one {
-    margin: 0 14px 24px 0;
-    max-width: 356px;
+    /* margin: 0 14px 24px 0; */
+    max-width: 265px;
     max-height: 508px;
   }
   .card-three {
-    margin: 0 28px 0 0;
+    /* margin: 0 28px 0 0; */
     min-width: 270px;
   }
   .card-four {
-    max-width: 356px;
+    max-width: 305px;
     max-height: 268px;
   }
 }
@@ -1002,8 +1033,8 @@ p {
   }
   .card-all {
     max-width: 100%;
-    padding: 16px;
-    margin: 10px 0;
+    /* padding: 16px; */
+    /* margin: 10px 0; */
   }
   .svg_text {
     padding: 0;
@@ -1011,17 +1042,21 @@ p {
   .wrapper-content-right {
     flex-direction: column;
   }
+
+  .card-three {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 320px) {
   .container {
     padding: 0 16px;
   }
-    .card-three {
-    margin: 0 28px 0 0;
-    min-width: 200px;
+  .card-three {
+    /* margin: 0 28px 0 0; */
+    min-width: 100%;
   }
-  .wrapper-content-right{
+  .wrapper-content-right {
     flex-wrap: nowrap;
   }
 }
