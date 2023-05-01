@@ -697,6 +697,7 @@ p {
   padding: 24px;
   background: #e6f0fd;
   border-radius: 16px;
+  margin: 0 0 24px 0;
 }
 .card-one h5 {
   text-align: center;
@@ -729,7 +730,7 @@ p {
 
 /* ---------------card-2---------------- */
 .card-two {
-  margin: 24px 0 0 0;
+  margin: 0px 0 24px 0;
   position: relative;
   padding: 16px 16px 36px 16px;
   border-radius: 16px;
@@ -803,6 +804,8 @@ p {
 
 /* ----------------------card three------------------------------ */
 .card-three {
+  display: flex;
+  justify-content: center;
   margin: 28px 0 0 0;
   overflow: hidden;
   max-width: 288px;
@@ -946,6 +949,7 @@ p {
   .card-four div {
     margin: 24px;
   }
+
   .delete-desktop {
     display: inline;
     color: #2963a3;
@@ -960,10 +964,7 @@ p {
   .container {
     padding: 0 20px;
   }
-  .card-two,
-  .card-three {
-    display: none;
-  }
+
   .wrapper-content-left {
     margin: 0 0 40px 0;
   }
@@ -972,15 +973,19 @@ p {
   }
   .wrapper-content-right {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 0 144px 0;
   }
   .card-one {
-    margin: 0 14px 0 0;
+    margin: 0 14px 24px 0;
     max-width: 356px;
     max-height: 508px;
   }
+  .card-three {
+    margin: 0 28px 0 0;
+    min-width: 270px;
+  }
   .card-four {
-    margin: 0;
     max-width: 356px;
     max-height: 268px;
   }
@@ -995,10 +1000,28 @@ p {
   .card-three {
     display: flex;
   }
+  .card-all {
+    max-width: 100%;
+    padding: 16px;
+    margin: 10px 0;
+  }
   .svg_text {
     padding: 0;
   }
-  .wrapper-content-right{
+  .wrapper-content-right {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 16px;
+  }
+    .card-three {
+    margin: 0 28px 0 0;
+    min-width: 200px;
+  }
+  .wrapper-content-right{
+    flex-wrap: nowrap;
   }
 }
