@@ -923,8 +923,10 @@ p {
 }
 
 .section-end {
-  padding: 80px 0 76px 0;
+  display: flex;
+  padding: 80px 0 26px 0;
   border-top: 1px solid #dedede;
+  justify-content: space-between;
 }
 .svg-end {
   position: relative;
@@ -938,16 +940,30 @@ p {
   font-size: 3.42rem;
   line-height: 4rem;
 }
-.section-end div {
+.section-end div:nth-child(1) {
   max-width: 348px;
 }
 .section-end p {
   font-size: 1.28rem;
   line-height: 1.85rem;
 }
+.vector-svg-div {
+  position: relative;
+}
 
+.vector-svg {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+.svg-vector-two {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+}
 /* --------------------iPad Pro 12.9"-3----------------- */
 @media (max-width: 1024px) {
+
   .container {
     padding: 0 32px;
   }
@@ -970,7 +986,9 @@ p {
   .section-end,
   .svg-end,
   .check-tag-end,
-  .delet-iPad {
+  .delet-iPad,
+  .svg-vector-two,
+  .vector-svg-div {
     display: none;
   }
   .card-four div {
@@ -1056,7 +1074,7 @@ p {
     flex-wrap: nowrap;
   }
   h3 {
-    font-size:1.28rem ;
+    font-size: 1.28rem;
     line-height: 1.85rem;
   }
 }
