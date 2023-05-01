@@ -44,7 +44,10 @@ nav a {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
+a{
+  color: #333333;
+  text-decoration: none;
+}
 
 .wrapper-mini {
   box-sizing: border-box;

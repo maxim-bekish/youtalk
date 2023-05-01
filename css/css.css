@@ -771,7 +771,6 @@ p {
 }
 .card-two img {
   margin: 8px 0 0 0;
-
   border-radius: 50%;
 }
 
@@ -819,12 +818,9 @@ p {
 
 /* ----------------------card three------------------------------ */
 .card-three {
-  display: flex;
-  justify-content: center;
-
   overflow: hidden;
-  max-width: 288px;
-  height: 292px;
+
+  min-height: 292px;
   position: relative;
   background: #2963a3;
   border-radius: 16px;
@@ -852,9 +848,9 @@ p {
 }
 .card-three > .happy {
   position: absolute;
-  margin: 0;
+  width: 100%;
+  height: 80%;
   top: 0px;
-  left: 0px;
 }
 .card-three h2 {
   text-align: center;
@@ -998,28 +994,19 @@ p {
   .container {
     padding: 0 20px;
   }
-
+  .card-three {
+  }
   .wrapper-content {
     flex-direction: column;
   }
   .wrapper-content-right {
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 100%;
     margin: 0;
-  }
-
-  .card-one {
-    max-width: 265px;
-    max-height: 508px;
-  }
-  .card-three {
-    min-width: 270px;
-  }
-  .card-four {
-    max-width: 305px;
-    max-height: 268px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.8fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
   }
 }
 /* -------------------- Доп брек-поинт 550зч ----------------- */
@@ -1028,42 +1015,26 @@ p {
   .img_woman_and_arm {
     flex-direction: column;
   }
-}
 
+  .wrapper-content-right {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 0.7fr) 0.65fr 0.55fr;
+  }
+}
 /* -------------------- iPhone 11 Pro Max-4 ----------------- */
 @media (max-width: 414px) {
   .img_woman_and_arm,
   .section-chair-and-night_woman {
     flex-direction: column;
   }
-  .card-two,
-  .card-three {
-    display: flex;
-  }
-  .card-all {
-    max-width: 100%;
-  }
   .svg_text {
     padding: 0;
   }
-  .wrapper-content-right {
-    flex-direction: column;
-  }
-
-  .card-three {
-    min-width: 100%;
-  }
 }
-
+/* -------------------- iPhone SE-3----------------- */
 @media (max-width: 320px) {
   .container {
     padding: 0 16px;
-  }
-  .card-three {
-    min-width: 100%;
-  }
-  .wrapper-content-right {
-    flex-wrap: nowrap;
   }
   h3 {
     font-size: 1.28rem;
